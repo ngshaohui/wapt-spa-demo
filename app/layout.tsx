@@ -1,7 +1,8 @@
 'use client';
 
-import { Alignment, Button, Navbar, Switch } from '@blueprintjs/core';
+import { Alignment, Button, Colors, Icon, IconSize, Navbar, Switch } from '@blueprintjs/core';
 import './globals.css';
+import styles from './layout.module.css';
 import { Inter } from 'next/font/google';
 import { useState } from 'react';
 import Link from 'next/link';
@@ -27,6 +28,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <Link href="/dashboard">
               <Button className="bp5-minimal" icon="dashboard" text="Dashboard" />
             </Link>
+            <div className={styles.warningMessage}>
+              <Icon size={IconSize.LARGE} color={Colors.ORANGE5} icon="warning-sign" />
+              <h4>DO NOT scan this web application</h4>
+              <Icon size={IconSize.LARGE} color={Colors.ORANGE5} icon="warning-sign" />
+            </div>
           </Navbar.Group>
           <Navbar.Group align={Alignment.RIGHT}>
             <Switch

@@ -6,7 +6,7 @@ export default function Sidebar() {
     fetch('/api/v1/statistics');
   }
   function makePost() {
-    fetch('/api/v2/post', { method: 'POST' });
+    fetch('/api/v2/post');
   }
   return (
     <Menu className={styles.sidebar}>

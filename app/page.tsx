@@ -1,6 +1,6 @@
 'use client';
 
-import Sidebar from '@/components/Sidebar/Sidebar';
+import Sidebar from './Sidebar';
 import styles from './page.module.css';
 import { useEffect } from 'react';
 import { Card, HTMLTable } from '@blueprintjs/core';
